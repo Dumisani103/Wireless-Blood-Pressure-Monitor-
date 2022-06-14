@@ -19,7 +19,7 @@ To be able to capture data from the memory chip, the chip's address had to be kn
 Following memory chip identification, the memory chip was connected to the wireless module. EP32 is the wireless module deployed in this prototype. Aside from being a wireless module, the ESP32 also serves as a microcontroller. As a result, it was used to facilitate data capture using the I2C communication protocol. Figure below shows the overall circuit of the ESP32 (wireless module) and the memory chip (BR24L02W) within the blood pressure monitor machine. Pins 21 and 22 of the ESP32 are connected to the memory chip's SDA (Data pin) and SCL (clock signal pin), respectively. A switch is placed between the ground pin (G) and enable pin (EN) of the EP32. The switch allows the user to activate the memory chip and begin transferring data. 
 
 ![image](https://user-images.githubusercontent.com/64351671/173669892-45f0b914-d984-4d90-982e-ae04297d27fc.png)
-![image](https://user-images.githubusercontent.com/64351671/173670313-b64592d2-cdb2-4bbe-ae1d-4bde097b9bc2.png)
+![image](https://user-images.githubusercontent.com/64351671/173671727-fe824fc2-b9d5-430c-b642-6d0c9abd6ff0.png)
 
 The following steps describe the algorithm used for data acquisition from the machine to the EP32 CHIP: 
 - Checking for bus activity, that is, determining whether or not a link exists between the memory chip and the ESP32.
