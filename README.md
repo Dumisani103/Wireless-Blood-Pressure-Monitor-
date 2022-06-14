@@ -5,7 +5,7 @@ Hypertension is a condition in which the force of the blood against the artery w
 The designed system will ease the following: patients’ data management, generation of patients’ progress reports, interpretation of results, and improvement of patient’s health care.
 
 ## Implementation 
-Below is the setup of the proposed system. 
+Figure below shows the setup of the proposed system. 
 ![image](https://user-images.githubusercontent.com/64351671/173662838-9f2aa5ab-9adf-47d2-9b8f-1e38e5cc1ed0.png)
 
 
