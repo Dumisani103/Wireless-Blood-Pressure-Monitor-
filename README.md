@@ -14,7 +14,20 @@ The memory chip of the stand-alone blood pressure monitor was identified as BR24
 
 ![image](https://user-images.githubusercontent.com/64351671/173666917-a035db80-5666-4957-8a95-a1de0253ad42.png)
 
-To be able to capture data from the memory chip, the chip's address had to be known. As a result, the Arduino code in Figure 2 was used to scan for the memory chip's address. The results from running the Arduino code are shown in kkk, which indicated that the address of the machine is 50 hexadecimal, which is 80 in decimal.
+To be able to capture data from the memory chip, the chip's address had to be known. As a result, the Arduino [code](https://github.com/Dumisani103/Wireless-Blood-Pressure-Monitor-/blob/25ee90a8af7a48a891122cc88df739e65055ab3a/chip_Identification.ino) used to scan for the memory chip's address. The results from running the Arduino code indicated that the address of the machine is 50 hexadecimal, which is 80 in decimal.
+
+Following memory chip identification, the memory chip was connected to the wireless module. EP32 is the wireless module deployed in this prototype. Aside from being a wireless module, the ESP32 also serves as a microcontroller. As a result, it was used to facilitate data capture using the I2C communication protocol. Figure below shows the overall circuit of the ESP32 (wireless module) and the memory chip (BR24L02W) within the blood pressure monitor machine. Pins 21 and 22 of the ESP32 are connected to the memory chip's SDA (Data pin) and SCL (clock signal pin), respectively. A switch is placed between the ground pin (G) and enable pin (EN) of the EP32. The switch allows the user to activate the memory chip and begin transferring data. 
+
+![image](https://user-images.githubusercontent.com/64351671/173669892-45f0b914-d984-4d90-982e-ae04297d27fc.png)
+![image](https://user-images.githubusercontent.com/64351671/173670313-b64592d2-cdb2-4bbe-ae1d-4bde097b9bc2.png)
+
+The following steps describe the algorithm used for data acquisition from the machine to the EP32 CHIP: 
+- Checking for bus activity, that is, determining whether or not a link exists between the memory chip and the ESP32.
+- Identifying the address location for the latest measurement in the memory.
+- Reading data from the identified address location. 
+- Temporarily storing the data on the ESP32’s memory. 
+Once the data has been captured, it is transmitted to the online database using the POST request technique. The entire Arduino code for both transmission and data acquisition is included in [here]()
+
 
 
 
