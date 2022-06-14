@@ -1,4 +1,4 @@
-/ Use WiFiClient class to create TCP connections
+// Use WiFiClient class to create TCP connections
   WiFiClient client;
   const int httpPort = 80;
   if (!client.connect(host, httpPort)) {
