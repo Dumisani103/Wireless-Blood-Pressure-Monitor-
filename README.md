@@ -26,9 +26,7 @@ The following steps describe the algorithm used for data acquisition from the ma
 - Identifying the address location for the latest measurement in the memory.
 - Reading data from the identified address location. 
 - Temporarily storing the data on the ESP32’s memory. 
-Once the data has been captured, it is transmitted to the online database using the POST request technique. The entire Arduino code for both transmission and data acquisition is included in [here]()
-
-
+Once the data has been captured, it is transmitted to the online database using the POST request technique. The entire Arduino code for both transmission and data acquisition is included in [here](https://github.com/Dumisani103/Wireless-Blood-Pressure-Monitor-/blob/cb57a96849ee6e0e9ed8bd7a63cfe9af48591ac6/final_code__21-04-21_.ino). The PHP script (API) that aids with data insertion into the database is [here](https://github.com/Dumisani103/Wireless-Blood-Pressure-Monitor-/blob/67e6d7788b7c00664e950467df63444f7e5ae3ee/API_send_to_database.php). 
 
 
 
