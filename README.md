@@ -6,7 +6,8 @@ The designed system will ease the following: patients’ data management, genera
 
 ## Implementation 
 Figure below shows the setup of the proposed system. 
-![image](https://user-images.githubusercontent.com/64351671/173662838-9f2aa5ab-9adf-47d2-9b8f-1e38e5cc1ed0.png)
+![image](https://user-images.githubusercontent.com/64351671/173663263-523745d6-992e-49ee-b7cb-0b88f81be3fd.png)
+
 
 
 
