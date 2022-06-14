@@ -7,6 +7,7 @@ The designed system will ease the following: patients’ data management, genera
 ## Implementation 
 Figure below shows the setup of the proposed system. 
 ![image](https://user-images.githubusercontent.com/64351671/173663263-523745d6-992e-49ee-b7cb-0b88f81be3fd.png)
+The Prototype consists of a stand-alone blood pressure monitor ([EW3106](https://www.amazon.co.uk/Panasonic-Diagnostec-EW3106-Pressure-Monitor/dp/B0009OGHRW)) and a wireless module.
 
 
 
